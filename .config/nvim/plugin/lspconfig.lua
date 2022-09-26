@@ -97,7 +97,6 @@ nvim_lsp.tailwindcss.setup {}
 nvim_lsp.flow.setup {
   cmd = { "npx", "--no-install", "flow", "lsp"},
   filetype = { "javascript", "javascriptreact", "javascript.jsx"},
-  root_dir = root_pattern(".flowpattern");
 }
 
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
